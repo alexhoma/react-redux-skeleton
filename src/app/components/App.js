@@ -1,9 +1,14 @@
-import React, {Component} from "react";
-import {Router, Route, browserHistory, IndexRoute} from "react-router";
+import React, { Component } from 'react';
+import {
+    Router,
+    Route,
+    browserHistory,
+    IndexRoute
+} from 'react-router';
 
-import {Root} from "../components/Root";
-import {Home} from "../components/Home";
-import {Blog} from "../components/Blog";
+import { Root } from '../components/Root';
+import { Home } from '../components/Home';
+import { Blog } from '../components/Blog';
 
 class App extends Component {
     render() {
@@ -15,7 +20,7 @@ class App extends Component {
                     <Route path={"blog(/:entryId)"} component={Blog}/>
                     {/* more routes here.. */}
                 </Route>
-                {/* or here.. */}
+                {/* and here.. */}
             </Router>
         );
     }
