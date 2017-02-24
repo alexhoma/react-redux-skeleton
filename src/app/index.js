@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 // ... some sass imorts
 
 // Import components
-import Main from "./components/Main";
+import App from "./components/App";
 import Blog from "./components/Blog";
 import Post from "./components/Post";
 
@@ -17,13 +17,13 @@ import store, {history} from "./store";
 const router = (
     <Provider store={store}>
         <Router history={history}>
-            <Route path="/" component={Main}>
-                <IndexRoute componetn={Blog} />
-                <Route path="/blog/:postId" component={Post} />
+            <Route path="/" component={App}>
+                <IndexRoute component={Blog} />
+                <Route path="/posts/:slug" component={Post} />
             </Route>
         </Router>
     </Provider>
-)
+);
 
 // Render!
 ReactDOM.render(

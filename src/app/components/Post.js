@@ -4,8 +4,7 @@ class Post extends React.Component {
     render() {
         return (
             <section>
-                <h3>Single post title</h3>
-                Sample content.
+                <h3>Post view</h3>
             </section>
         )
     }

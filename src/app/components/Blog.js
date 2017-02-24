@@ -1,12 +1,19 @@
 import React from "react";
+import PostPreview from "./PostPreview";
 
 class Blog extends React.Component {
     render() {
         return (
-            <header>
-                <h3>Blog main page</h3>
-                This is the homepage of the blog
-            </header>
+            <section>
+                {this.props.posts.map( (post, i) =>
+                    <PostPreview
+                        {...this.props}
+                        key={i}
+                        i={i}
+                        post={post}
+                    />
+                )}
+            </section>
         )
     }
 }

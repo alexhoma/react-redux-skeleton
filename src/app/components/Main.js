@@ -9,8 +9,8 @@ class Main extends React.Component {
                 <Link to="/">Home</Link>
 
                 <hr/>
-
-                {this.props.children}
+                {React.cloneElement(this.props.children, this.props)}
+                {/*{this.props.children}*/}
             </main>
         )
     }
