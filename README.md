@@ -1,9 +1,15 @@
 # React JS Bootstrap
 
-Customized React JS bootstrap to initialize my projects based on several resources. Edit
+Customized React JS + Redux bootstrap to initialize my projects based on several resources.
 
-Just type this commands to initialize your app:
+## Content
+Basic blog page with some blogs linked to its detailed view.
+
+## Initialize
+
+Just type this commands to initialize the app:
 ```avascript
 > npm install
 > npm start
 ```
+
