@@ -6,8 +6,8 @@ import ReactDOM from "react-dom";
 
 // Import components
 import App from "./components/App";
-import Blog from "./components/Blog";
-import Post from "./components/Post";
+import Blog from "./components/Blog/Blog";
+import PostView from "./components/Blog/PostView";
 
 // Router dependencies
 import {Router, Route, IndexRoute, browserHistory} from "react-router";
@@ -19,7 +19,7 @@ const router = (
         <Router history={history}>
             <Route path="/" component={App}>
                 <IndexRoute component={Blog} />
-                <Route path="/posts/:slug" component={Post} />
+                <Route path="/posts/:slug" component={PostView} />
             </Route>
         </Router>
     </Provider>
