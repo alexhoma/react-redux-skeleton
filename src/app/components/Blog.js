@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
+import React from "react";
 
-export class Blog extends Component {
+class Blog extends React.Component {
     render() {
         return (
-            <section className="Blog">
-                <h2>Blog page</h2>
-                Entry: {this.props.params.entryId}
-            </section>
+            <header>
+                <h3>Blog main page</h3>
+                This is the homepage of the blog
+            </header>
         )
     }
 }
+
+export default Blog;
