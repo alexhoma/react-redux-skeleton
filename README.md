@@ -3,7 +3,7 @@
 Customized React JS + Redux bootstrap to initialize my projects based on several resources.
 
 ## Content
-Basic blog page with some blogs linked to its detailed view.
+Basic blog page example with some posts linked to its detailed view.
 
 ## Initialize
 
