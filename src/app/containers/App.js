@@ -2,7 +2,7 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import * as postActionCreators from "../actions/postActions";
 
-import Main from "./Main";
+import Main from "../components/Main";
 
 function mapStateToProps(state) {
     return {

@@ -1,17 +1,16 @@
 import React from "react";
-import {Link} from "react-router";
+import Header from "./Header";
+import Footer from "./Footer";
 
 class Main extends React.Component {
     render() {
         return (
-            <main>
-                <h1>React redux bootstrap</h1>
-                <Link to="/">Home</Link>
-
-                <hr/>
+            <section>
+                <Header />
+                {/* Yield all components */}
                 {React.cloneElement(this.props.children, this.props)}
-                {/*{this.props.children}*/}
-            </main>
+                <Footer />
+            </section>
         )
     }
 }

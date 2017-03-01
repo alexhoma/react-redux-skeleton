@@ -20,6 +20,10 @@ var config = {
                 query: {
                     presets: ["react", "es2015", "stage-2"]
                 }
+            }, {
+                test: /\.sass?/,
+                loader: "style-loader!css-loader!sass-loader",
+                include: SRC_DIR,
             }
         ]
     }

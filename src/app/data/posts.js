@@ -3,22 +3,25 @@ const posts = [
         "id": 1,
         "slug": "hello-react",
         "title": "Hello React",
-        "content": "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",
-        "author": "Samuel L. Jackson"
+        "content": "The <b>path of the righteous man</b> is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.",
+        "author": "Samuel L. Jackson",
+        "categories": "programming"
     },
     {
         "id": 2,
         "slug": "this-is-a-react-post",
         "title": "This is a React post",
-        "content": "Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?",
-        "author": "Donald Duck"
+        "content": "Look, <b>just because</b> I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?",
+        "author": "Donald Duck",
+        "categories": "programming"
     },
     {
         "id": 3,
         "slug": "i-am-the-one-who-knocks",
         "title": "I am the one who knocks!",
         "content": "Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.",
-        "author": "Heisenberg"
+        "author": "Heisenberg",
+        "categories": "sports"
     },
     {
         "id": 4,
@@ -47,7 +50,7 @@ const posts = [
         "title": "Vikings 4th season",
         "content": "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.",
         "author": "Ragnar Lothbrok"
-    },
+    }
 ];
 
 export default posts;

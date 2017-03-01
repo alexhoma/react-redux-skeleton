@@ -1,4 +1,8 @@
-/** Root reducer */
+/**
+ * Root reducer
+ * @example
+ *  - The root reducer may combine the output of multiple reducers into a single state tree.
+ */
 import {combineReducers} from "redux";
 import {routerReducer} from "react-router-redux";
 

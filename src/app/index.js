@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 // Import css
-// ... some sass imorts
+import "./styles/index.sass";
 
 // Import components
-import App from "./components/App";
-import Blog from "./components/Blog/Blog";
+import App from "./containers/App";
+import Home from "./components/Home/Home";
+import BlogView from "./components/Blog/BlogView";
 import PostView from "./components/Blog/PostView";
+import CategoryView from "./components/Blog/CategoryView";
 
 // Router dependencies
 import {Router, Route, IndexRoute, browserHistory} from "react-router";
@@ -18,14 +20,18 @@ const router = (
     <Provider store={store}>
         <Router history={history}>
             <Route path="/" component={App}>
-                <IndexRoute component={Blog} />
-                <Route path="/posts/:slug" component={PostView} />
+                <IndexRoute component={Home} />
+            </Route>
+            <Route path="/blog" component={App}>
+                <IndexRoute component={BlogView} />
+                <Route path="/blog/:slug" component={PostView} />
+                <Route path="/blog/categories/:category" component={CategoryView} />
             </Route>
         </Router>
     </Provider>
 );
 
-// Render!
+// Render this!
 ReactDOM.render(
     router,
     document.getElementById("root")
