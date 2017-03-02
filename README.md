@@ -14,7 +14,7 @@ Just type this commands to initialize the app **locally**:
 ```
 
 - Webpack dev server with hot reloading allows you to see the changes while you are coding. So you don't need to reload your browser every time.
-- The `server.js file on your root directory will serve your app on your production environment. But you can also run it locally on `localhost:8080` typing:
+- The `server.js` file on your root directory will serve your app on your production environment. But you can also run it locally on `localhost:8080` typing:
 
   `npm run server` or `node server.js`
 
@@ -54,7 +54,7 @@ First you will need to create an account and download their CLI tools. This two 
 
 ```javascript
 // tell heroku you are creating a new app (without the curly braces!)
-> heroku create {your-app-name}`
+> heroku create {your-app-name}
 
 // check if your app runs well locally
 > heroku local web
