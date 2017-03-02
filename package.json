@@ -22,6 +22,8 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "express": "^4.15.0",
+    "moment": "^2.17.1",
     "normalize-css": "^2.3.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -35,9 +37,9 @@
     "whatwg-fetch": "^2.0.2"
   },
   "scripts": {
-    "start": "npm run build",
-    "build": "webpack -d && cp src/index.html public/index.html && webpack-dev-server --content-base src/ --inline --hot --port 3000 --history-api-fallback",
-    "build:prod": "webpack -p && cp src/index.html public/index.html",
+    "start": "npm run build:dev",
+    "build:dev": "webpack -d && cp src/index.html public/index.html && webpack-dev-server --content-base src/ --inline --hot --port 7770 --history-api-fallback",
+    "build": "webpack -p && cp src/index.html public/index.html",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
